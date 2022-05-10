@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+     .n{
+		 box-shadow:0 0 10px;
+		 text-align: center;
+		 position: relative;
+		 border-radius: 5px;
+		 box-sizing: border-box;
+		 width:116px;height:178px;
+		 ;
+	 }
+	</style>
+</head>
+<body>
+<h1>digite os 5 numeros do seu planning poker</h1><br></br>
+<div>
+	<h3>1 numero  2 numero   3numero     4numero   5numero</h3>
+    <input id="n1" name="n1" class="n" type="number">
+	<input id="n2" name="n2" class="n" type="number">
+	<input  id="n3" name="n3" class="n" type="number">
+	<input id="n4" name="n4" class="n"  type="number">
+     <input id="n5" name="n5" class="n" type="number">
+
+	<input type="button" value="plus" id="media" onclick="media()">
+	
+</div>
+
+<script>
+	   
+	 function media() 
+	 {
+		var n1 = parseInt(document.getElementById("n1").Value);
+		var n2 = parseInt(document.getElementById("n2").Value);
+		var n3 = parseInt(document.getElementById("n3").Value);
+		var n4 = parseInt(document.getElementById("n4").Value);
+		var n5 =parseInt( document.getElementById("n5").Value);
+		let resposta =  document.write(n1 + n2 + n3 + n4 + n5);
+	 } 	
+</script>
+</body>
+</html>

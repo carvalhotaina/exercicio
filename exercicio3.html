@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <script>
+        function funcao()
+        {
+            var inum= Number(num);
+            var num = document.getElementById("numero").value;
+        
+            inum= prompt('escrevaqui');
+            if(inum % 2 == 0){
+                alert("par");
+            }
+            else{
+                alert("impar");
+            }
+           
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="numero" onclick="funcao()">
+    <button onclick="funcao();">certificar</button>
+</body>
+</html>

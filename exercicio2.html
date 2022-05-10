@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script>
+    var i;
+    var a=1,b=1;
+    var c,calculador;
+    function fibonacci()
+    {
+      calculador=formulario.texto.value;
+      document.write("<br>"+a);
+      document.write("<br>"+b);
+      for(i=2;i<calculador;i++){
+        c=a+b;
+        a=b;
+        b=c;
+        document.write("<br>"+c);
+        
+      }
+    }
+  </script>
+</head>
+<body>
+  <form name=formulario>
+    coloque um valor
+    <input type=text name=texto>
+    <input type=button value='calcular'onclick=fibonacci()>
+  </form>
+</body>
+</html>
